@@ -544,7 +544,7 @@ exports.validate = function (report, schema, json) {
     }
 
     var type = typeof(json);
-    if(type !== "object" && schema.properties){
+    if (type !== "object" && schema.properties) {
         report.addError("INVALID_TYPE", ["object", type], null, schema);
         return false;
     }
