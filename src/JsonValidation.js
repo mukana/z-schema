@@ -543,6 +543,12 @@ exports.validate = function (report, schema, json) {
         return false;
     }
 
+    var type = typeof(json);
+    if(type !== 'object' && schema.properties){
+        report.addError("INVALID_TYPE", ["object", type], null, schema);
+        return false;
+    }
+
     // check if schema is empty, everything is valid against empty schema
     var keys = Object.keys(schema);
     if (keys.length === 0) {
