@@ -15,6 +15,9 @@
     "Schema",
     "Validator"
   ],
+  "overrides": {
+    "lodash@3": "git+https://github.com/sailshq/lodash.git"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/zaggino/z-schema.git"
