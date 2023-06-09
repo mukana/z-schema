@@ -74,7 +74,7 @@ module.exports = function (it) {
 };
 
 },{}],7:[function(require,module,exports){
-var core = module.exports = { version: '2.6.9' };
+var core = module.exports = { version: '2.6.12' };
 if (typeof __e == 'number') __e = core; // eslint-disable-line no-undef
 
 },{}],8:[function(require,module,exports){
@@ -540,7 +540,7 @@ var store = global[SHARED] || (global[SHARED] = {});
 })('versions', []).push({
   version: core.version,
   mode: require('./_library') ? 'pure' : 'global',
-  copyright: '© 2019 Denis Pushkarev (zloirock.ru)'
+  copyright: '© 2020 Denis Pushkarev (zloirock.ru)'
 });
 
 },{"./_core":7,"./_global":17,"./_library":25}],42:[function(require,module,exports){
@@ -892,7 +892,7 @@ setToStringTag(Math, 'Math', true);
 setToStringTag(global.JSON, 'JSON', true);
 
 },{"./_an-object":3,"./_descriptors":10,"./_enum-keys":13,"./_export":14,"./_fails":15,"./_global":17,"./_has":18,"./_hide":19,"./_is-array":23,"./_is-object":24,"./_library":25,"./_meta":26,"./_object-create":27,"./_object-dp":28,"./_object-gopd":30,"./_object-gopn":32,"./_object-gopn-ext":31,"./_object-gops":33,"./_object-keys":35,"./_object-pie":36,"./_property-desc":37,"./_redefine":38,"./_set-to-string-tag":39,"./_shared":41,"./_to-iobject":44,"./_to-object":46,"./_to-primitive":47,"./_uid":48,"./_wks":51,"./_wks-define":49,"./_wks-ext":50}],54:[function(require,module,exports){
-(function (global){
+(function (global){(function (){
 /**
  * lodash (Custom Build) <https://lodash.com/>
  * Build: `lodash modularize exports="npm" -o ./`
@@ -1825,9 +1825,9 @@ function get(object, path, defaultValue) {
 
 module.exports = get;
 
-}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
+}).call(this)}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
 },{}],55:[function(require,module,exports){
-(function (global){
+(function (global){(function (){
 /**
  * Lodash (Custom Build) <https://lodash.com/>
  * Build: `lodash modularize exports="npm" -o ./`
@@ -3677,7 +3677,7 @@ function stubFalse() {
 
 module.exports = isEqual;
 
-}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
+}).call(this)}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
 },{}],56:[function(require,module,exports){
 // shim for using process in browser
 var process = module.exports = {};
@@ -7889,7 +7889,7 @@ if (typeof Number.isFinite !== "function") {
 }
 
 },{}],139:[function(require,module,exports){
-(function (process){
+(function (process){(function (){
 "use strict";
 
 var get    = require("lodash.get");
@@ -8190,7 +8190,7 @@ Report.prototype.addCustomError = function (errorCode, errorMessage, params, sub
 
 module.exports = Report;
 
-}).call(this,require('_process'))
+}).call(this)}).call(this,require('_process'))
 },{"./Errors":135,"./Utils":143,"_process":56,"lodash.get":54}],140:[function(require,module,exports){
 "use strict";
 
@@ -9582,7 +9582,7 @@ exports.ucs2decode = function (string) {
 /*jshint +W016*/
 
 },{"core-js/es6/symbol":1}],144:[function(require,module,exports){
-(function (process){
+(function (process){(function (){
 "use strict";
 
 require("./Polyfills");
@@ -9993,7 +9993,7 @@ ZSchema.jsonSymbol = Utils.jsonSymbol;
 
 module.exports = ZSchema;
 
-}).call(this,require('_process'))
+}).call(this)}).call(this,require('_process'))
 },{"./FormatValidators":136,"./JsonValidation":137,"./Polyfills":138,"./Report":139,"./SchemaCache":140,"./SchemaCompilation":141,"./SchemaValidation":142,"./Utils":143,"./schemas/hyper-schema.json":145,"./schemas/schema.json":146,"_process":56,"lodash.get":54}],145:[function(require,module,exports){
 module.exports={
     "$schema": "http://json-schema.org/draft-04/hyper-schema#",
