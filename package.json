@@ -16,7 +16,10 @@
     "Validator"
   ],
   "overrides": {
-    "lodash@3": "git+https://github.com/sailshq/lodash.git"
+    "grunt-jscs": {
+      "lodash@>=3.0.0 <4": "git+https://github.com/sailshq/lodash.git",
+      "lodash@>=4.0.0 <5": "4.17.21"
+    }
   },
   "repository": {
     "type": "git",
